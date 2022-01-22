@@ -9,6 +9,7 @@
       "*": false
     },
     "python.formatting.provider": "black",
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "jupyter.jupyterServerType": "local"
   }
 }

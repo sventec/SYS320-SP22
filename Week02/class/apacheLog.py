@@ -1,4 +1,5 @@
 import importlib
+import os
 
 import logCheck
 
@@ -15,10 +16,10 @@ def apache_events(filename, service, term):
     found = []
 
     # loop through the results
-    for eachFound in is_found:
+    for found in is_found:
 
         # Split the results
-        sp_results = eachFound.split(" ")
+        sp_results = found.split(" ")
 
         # Append the split value to the found list
         found.append(sp_results[3] + " " + sp_results[0] + " " + sp_results[1])
@@ -27,5 +28,4 @@ def apache_events(filename, service, term):
     hosts = set(found)
 
     # Print results
-    for eachHost in hosts:
-        print(eachHost)
+    print(os.linesep.join(hosts))

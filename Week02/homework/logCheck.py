@@ -26,7 +26,7 @@ def _logs(filename, service, term):
     # for the relvant document.
     terms = [key[service][term] for key in keywords if service in key][0]
 
-    listOfKeywords = terms.split(",")
+    keys = terms.split(",")
 
     # Open syslog file and save as 'contents'
     with open(filename) as f:
@@ -38,10 +38,10 @@ def _logs(filename, service, term):
     # For each element in syslog
     for line in contents:
         # For each element in keyword
-        for eachKeyword in listOfKeywords:
+        for key in keys:
             # If element 'line' contains element 'keyword'
             # Then print the occurrences
-            x = re.findall(r"" + eachKeyword + "", line)
+            x = re.findall(r"" + key + "", line)
 
             for found in x:
                 # Append the returned key words to the results list

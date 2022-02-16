@@ -1,0 +1,21 @@
+---
+shell_attacks:
+  win_shell: ".*cmd.exe.*"
+  nix_shell: ".*/bin/sh.*"
+  web_shell: ".*c99.php.*"
+
+---
+db_attacks:
+  php_admin: ".*/phpmyadmin.*"
+  mysql: ".*mysql.*"
+
+---
+dir_attacks:
+  abs_path: ".*/etc/passwd.*"
+  back_path: ".*\\.\\..*"
+
+---
+cms_attacks:
+  joomla: ".*joomla.*"
+  wordpress: ".*wordpress.*"
+  xmlrpc: ".*xmlrpc.*"

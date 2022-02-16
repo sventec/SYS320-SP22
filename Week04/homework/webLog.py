@@ -99,9 +99,6 @@ def main():
             # Call search function on log file
             web_events(contents, args.search)
 
-    # Call our search function
-    # web_events(args.directory, args.search)
-
 
 if __name__ == "__main__":
     main()

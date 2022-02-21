@@ -100,7 +100,7 @@ def main():
         # Iterate through each search term in the yaml file
         for term in yaml_data.get("search"):
             # Check if the search term is in the line
-            if term in line.values():
+            if term in line.get("arguments"):
                 # Output the line's information
                 print(
                     "Type: {} | {} | {} | {} | {} | {} | {}".format(

@@ -3,7 +3,7 @@ credential_collection:
   description: "The Windows Registry stores configuration information that can be used by the system or other programs. Adversaries may query the Registry looking for credentials and passwords that have been stored for use by other programs or services. Sometimes these credentials are used for automatic logons. Adversaries could also inject malicious DLLs into registry keys that are loaded after reboot. When a user authenticates the DLLs have a routine that captures their credentials after login."
   type: "Credential Collection"
   search:
-    - "HKLM\\SYSTEM\\CurrentControlSet\\Control\\Lsa"
+    - 'HKLM\SYSTEM\CurrentControlSet\Control\Lsa'
 
 ---
 javascript_or_vbscript:

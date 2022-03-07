@@ -1,16 +1,6 @@
 {
-  "folders": [
-    {
-      "path": "."
-    }
-  ],
-  "settings": {
-    "github.copilot.enable": {
-      "*": false
-    },
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
     "jupyter.jupyterServerType": "local",
     "editor.wordWrap": "off"
-  }
 }

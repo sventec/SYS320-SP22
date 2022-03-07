@@ -37,7 +37,7 @@ for root, _, filenames in os.walk(rootdir):
 
     for f in filenames:
 
-        f_list.append(root + "/" + f)
+        f_list.append(os.path.join(root, f))
 
 
 def stat_file(to_stat):
